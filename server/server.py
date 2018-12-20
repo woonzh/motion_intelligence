@@ -59,5 +59,5 @@ def face_reg(message):
 
 if __name__ == '__main__':
     logger.info('Running socket IO')
-    socketio.run(app, host='0.0.0.0', port=8080)
+    socketio.run(app, host='0.0.0.0', port=8080, certfile='amaris_cert.pem', keyfile='amaris_key.pem')
 #    socketio.run(app, host='localhost', port=8080)
