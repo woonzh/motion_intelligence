@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  ui:
+    image: face_reg_ui
+    ports: 
+      - 8090:3000

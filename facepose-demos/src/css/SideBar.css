@@ -1,0 +1,45 @@
+.side-bar-wrapper {
+  border: 2px solid #222;
+  border-radius: 5px;
+  height: calc(100vh - 100px);
+}
+
+.side-bar-wrapper .logo {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  animation: logo-spin infinite 15s linear;
+  height: 30vmin;
+  box-shadow: 10px 20px 30px rgba(255, 255, 255, 0.5s);
+}
+
+.side-bar-wrapper h1 {
+  grid-column: 2/3;
+  text-align: center;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.side-bar-wrapper .progress-bar-wrapper {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin: 135px auto
+}
+
+.progress-bar-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 30px auto;
+  color: rgb(124, 124, 124);
+
+}
+
+.progress-bar {
+  box-sizing: border-box;
+}
+

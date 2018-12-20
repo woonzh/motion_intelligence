@@ -1,0 +1,9 @@
+Flask==1.0.2
+Flask-Cors==3.0.6
+Flask-SocketIO==3.1.0
+face-recognition==1.2.3
+face-recognition-models==0.3.0
+numpy==1.15.1
+pandas==0.23.4
+scipy==1.1.0
+sklearn==0.0

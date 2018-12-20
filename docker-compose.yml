@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  motion_face_reg:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: face_reg_complete:0.4
+    ports: 
+      - 9996:3000
+      - 9997:9997
+    command: ["bash", "-c", "cd server && nohup python server.py >> /home/amaris/MotionFacialBot/logs/server_output.logs & cd facepose-demos && nohup npm run start >> /home/amaris/MotionFacialBot/logs/ui_output.logs"]

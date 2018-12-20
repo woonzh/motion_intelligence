@@ -1,0 +1,9 @@
+#video {
+  display: none;
+}
+
+.PoseNet canvas {
+  margin-top: 60px;
+  height: calc(100vh - 100px);
+  width: calc((100vh - 100px) * 6/5);
+}

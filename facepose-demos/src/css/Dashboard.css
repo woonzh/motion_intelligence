@@ -1,0 +1,32 @@
+#main-display-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+  background: rgb(24, 24, 24)
+}
+
+.PoseNet {
+  grid-column: 1/2;
+}
+
+.side-bar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 2/3;
+  margin: 60px 24px 0 0;
+  width: 100%;
+  /* border: 1px solid #ff555d */
+}
+
+.Dashboard-toolbar-2 {
+  background: black
+}
+
+.MuiDrawer-docked-110 .Dashboard-drawerPaperClose-10 {
+  background: #444444;
+}
+
+.amaris-logo {
+  height: 30px
+}
