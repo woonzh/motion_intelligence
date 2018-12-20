@@ -82,5 +82,5 @@ def main():
     with open(labels_fName, 'wb') as f:
         pickle.dump(le, f)
     print('\x1b[6;30;42m' + "Training Image's encodings saved in {}".format(encoding_file_path) + '\x1b[0m')
-    
+
 main()

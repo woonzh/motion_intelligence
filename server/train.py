@@ -49,6 +49,4 @@ def main():
     with open(fName, 'wb') as f:
         pickle.dump((le, clf), f)
     print('\x1b[6;30;42m' + "Saving classifier to '{}'".format(fName) + '\x1b[0m')
-    
-main()
 
