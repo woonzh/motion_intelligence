@@ -1,3 +1,4 @@
 *.pyc
 
 facepose-demos/node_modules
+*.pem

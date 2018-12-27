@@ -142,7 +142,7 @@ class PoseNet extends Component {
   }
 
   connectToSocket() {
-    this.socket = openSocket("http://localhost:8080");
+    this.socket = openSocket("http://localhost:9997");
 
     this.socket.on("my response", function(msg) {
       this.emit("facereg", PoseNet.imgData);

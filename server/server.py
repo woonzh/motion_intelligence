@@ -8,6 +8,7 @@ Created on Sun Dec  2 17:49:47 2018
 
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
+from flask_cors import CORS
 
 import logging
 import process
@@ -18,6 +19,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
+CORS(app)
 
 #@socketio.on_connect()
 #def connected():
@@ -59,5 +61,5 @@ def face_reg(message):
 
 if __name__ == '__main__':
     logger.info('Running socket IO')
-    socketio.run(app, host='0.0.0.0', port=8080, certfile='amaris_cert.pem', keyfile='amaris_key.pem')
+    socketio.run(app, host='0.0.0.0', debug=True, port=9997, use_reloader=False, certfile='amaris_cert.pem', keyfile='amaris_key.pem')
 #    socketio.run(app, host='localhost', port=8080)
